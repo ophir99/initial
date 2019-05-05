@@ -1,0 +1,13 @@
+article {
+  width: 100%;
+  height: auto;
+  padding: 0 100px;
+  box-sizing: border-box;
+  background-color: antiquewhite;
+}
+
+article h1,
+article p {
+  margin: 0;
+  padding: 10px 0;
+}

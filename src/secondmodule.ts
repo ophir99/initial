@@ -4,8 +4,11 @@ import { PrimeModule } from "./primemodule";
 import { BrowserModule } from "@angular/platform-browser";
 import { RootComponent } from "./root/root";
 import { FirstComponent } from "./app/first/first.component";
+import { HeaderComponent } from './app/header/header.component';
+import { FooterComponent } from './app/footer/footer.component';
+import { ContentComponent } from './app/content/content.component';
 @NgModule({
-  declarations: [RootComponent, FirstComponent],
+  declarations: [RootComponent, FirstComponent, HeaderComponent, FooterComponent, ContentComponent],
   imports: [PrimeModule, BrowserModule],
   providers: [],
   bootstrap: [RootComponent]

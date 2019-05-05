@@ -1,0 +1,27 @@
+<article>
+  <h1>
+    {{ toolName }}
+  </h1>
+  <p>
+    {{ yearOfRelease }}
+  </p>
+  <p
+    *ngFor="
+      let language of languages;
+      let ind = index;
+      let e = even;
+      let o = odd;
+      let l = last;
+      let f = first
+    "
+  >
+    {{ language }} --> {{ ind }} // {{ e }} || {{ o }} == {{ l }} # {{ f }}
+  </p>
+  <p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus unde magnam
+    accusantium dicta? Inventore veniam, nobis deleniti necessitatibus officiis
+    porro consectetur asperiores, excepturi corporis enim, quis aliquid!
+    Sapiente, et dolor?
+  </p>
+  <button (click)="throwAlert('Learners')">Click</button>
+</article>
