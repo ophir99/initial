@@ -7,8 +7,9 @@ import { FirstComponent } from "./app/first/first.component";
 import { HeaderComponent } from './app/header/header.component';
 import { FooterComponent } from './app/footer/footer.component';
 import { ContentComponent } from './app/content/content.component';
+import { ChildComponent } from './app/child/child.component';
 @NgModule({
-  declarations: [RootComponent, FirstComponent, HeaderComponent, FooterComponent, ContentComponent],
+  declarations: [RootComponent, FirstComponent, HeaderComponent, FooterComponent, ContentComponent, ChildComponent],
   imports: [PrimeModule, BrowserModule],
   providers: [],
   bootstrap: [RootComponent]

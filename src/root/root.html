@@ -1,5 +1,11 @@
 <app-header></app-header>
-<app-content></app-content>
-<app-content></app-content>
-<app-content></app-content>
+<h1 class="selected">You have selected {{ selected }} to learn</h1>
+
+<main>
+  <app-child
+    [acceptor]="language"
+    *ngFor="let language of languages"
+    (customEvent)="selectLanguage($event)"
+  ></app-child>
+</main>
 <app-footer></app-footer>
